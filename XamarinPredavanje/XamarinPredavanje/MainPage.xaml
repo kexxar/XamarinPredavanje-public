@@ -2,23 +2,89 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinPredavanje.MainPage">
-
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
+        <Label
+            Text="02hero"
+            HorizontalOptions="CenterAndExpand"
+            FontSize="50"
+            TextColor="Black"
+            TextDecorations="Underline,Strikethrough"/>
+        <Label
+            x:Name="GestureLabel"
+            Text="02Hero"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            FontSize="50"
+            TextColor="Blue"
+            BackgroundColor="Chocolate"
+            TextTransform="Uppercase"
+            CharacterSpacing="5">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label 
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            FontSize="Title"
+            TextColor="Black"
+            MaxLines="-1"
+            LineBreakMode="TailTruncation">
+            <Label.Text>
+                kjddhflaisdhd fasdfk asdkd fhsdakjf hajdashiuhigryu v brhrihl  aefevue uvy    
+            </Label.Text>
+        </Label>
+        <Label
+            Text="Xamarin"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            TextColor="Crimson"
+            FontSize="40"
+            FontFamily="Comic"/>
+        <Label
+            Text="Xamarin"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            TextColor="Crimson"
+            FontSize="40"
+            FontFamily="Comic-bold"/>
+        <Label
+            Text="Xamarin"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            TextColor="DarkSeaGreen"
+            FontSize="40"
+            FontAttributes="Bold,Italic"/>
+        <Label
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            TextColor="Fuchsia"
+            FontSize="40">
             <Label.FormattedText>
                 <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
+                    <Span Text="Comic-default"
+                          TextColor="Red"
+                          FontFamily="Comic"
+                          FontSize="20"/>
+                    <Span Text=" | "/>
+                    <Span Text="Comic-bold"
+                          TextColor="Blue"
+                          FontFamily="Comic-bold"
+                          FontSize="30"/>
                 </FormattedString>
             </Label.FormattedText>
         </Label>
+        <Label
+            x:Name="LinkLabel"
+            Text="neki link"
+            HorizontalOptions="Center"
+            TextColor="Blue"
+            TextDecorations="Underline"
+            FontSize="30">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer 
+                    Tapped="TapGestureRecognizer_Tapped_1"/>
+            </Label.GestureRecognizers>
+        </Label>
     </StackLayout>
-
 </ContentPage>
