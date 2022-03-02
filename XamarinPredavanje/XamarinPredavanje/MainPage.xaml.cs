@@ -13,6 +13,7 @@ namespace XamarinPredavanje
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = new MainViewModel();
         }
     }
 }
