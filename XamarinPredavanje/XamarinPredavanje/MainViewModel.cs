@@ -16,6 +16,7 @@ namespace XamarinPredavanje
         {
             LabelText = "Hello from ViewModel";
             ButtonClickCommand = new Command(OnButtonClicked);
+            Button2ClickCommand = new Command(OnButtonClicked);
             NumericClickCommand = new Command<int>(OnNumberClicked);
         }
 
@@ -42,6 +43,7 @@ namespace XamarinPredavanje
         }
 
         public ICommand ButtonClickCommand { get; }
+        public ICommand Button2ClickCommand { get; }
 
         public ICommand NumericClickCommand { get; }
     }
