@@ -18,6 +18,7 @@ namespace XamarinPredavanje
             ButtonClickCommand = new Command(OnButtonClicked);
             Button2ClickCommand = new Command(OnButtonClicked);
             NumericClickCommand = new Command<int>(OnNumberClicked);
+            Numeric3ClickCommand = new Command<int>(OnNumberClicked);
             Numeric4ClickCommand = new Command<int>(OnNumberClicked);
         }
 
@@ -47,6 +48,7 @@ namespace XamarinPredavanje
         public ICommand Button2ClickCommand { get; }
 
         public ICommand NumericClickCommand { get; }
+        public ICommand Numeric3ClickCommand { get; }
         public ICommand Numeric4ClickCommand { get; }
     }
 }
