@@ -14,6 +14,7 @@ namespace XamarinPredavanje
         {
             InitializeComponent();
             BindingContext = new MainViewModel();
+            Console.WriteLine("test");
         }
     }
 }
